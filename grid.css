@@ -122,7 +122,7 @@ main  p {
     position: relative ;
     display: flex;
     justify-content: center;
-    margin:2rem;
+    margin-top:8rem;
 }
 .steam{
     width: 15rem;
