@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="grid.css">
-    <title>Document</title>
+    <title>Redbeet Interactive</title>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
 </head>
-    <video muted loop autoplay poster="poster.png" class="videobackground">
-        <source src="headervideo.mp4" type="video/mp4"> </video>
-<header class="navigation"> 
-    <nav>
-        <ul>
-            <il><a href="">About us</a></il>
-            <il><a href="">Jobs</a></il>
-            <il><a href="">Contacts</a></il>
-            <il><a href="">Raft</a></il>
-        </ul>
-    </nav>
-</header> 
-<div class="page-grid">
-    <header class="header">
-        <h1><a href="index.html"><img src="logo.png" alt="logo"></a></h1>
-    </header>
+<video muted loop autoplay poster="poster.png" class="videobackground">
+    <source src="headervideo.mp4" type="video/mp4"> </video>
+    <span onclick="openNav()" class="openNav"><i class="fas fa-angle-right"></i></span>
+
+<div id="main">
+<header class="header">
+
+    <h1><a href="index.html"><img src="logo.png" alt="logo"></a></h1>
+</header>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-left"></i></a>
+    <a href="aboutus.html" class="aboutus">About us</a>
+    <a href="jobs.html" class="Jobs">Jobs</a>
+    <a href="contacts.html" class="Contacts">Contacts</a>
+    <a href="https://raft-game.com/" class="Raft">Raft</a>
 </div>
+
+    
+
+    
 <main>
     <h2>Welcome!</h2>
     <p>Redbeet Interactive is a small game studio founded in 2017. We are currently developing Raft, a game where your mission
     is to <span>survive an epic oceanic adventure. The game is available on Steam Early Access.</span></p>
+       
     <div class="img-gallery">
         <img src="img1.png" alt="" class="img1">
-        <img src="img2.png" alt="" class="img2">
-        <img src="img3.png" alt="" class="img3">
-    </div>
-    <div class="steam-flex">
-        <a href="https://store.steampowered.com/app/648800/Raft/"><img src="steam.png" alt="" class="steam"></a>
-    </div>
-</main>
-
-<body>
- 
-
+        <img src="img2.png" alt="" class="img2">  
+        </div>
+        <div class="iframe-flex">
+    <iframe src="https://www.youtube.com/embed/GT2ge4Q5GYI" class="img3"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        </div>
     
-</body>
+        <div class="steam-flex">
+            <a href="https://store.steampowered.com/app/648800/Raft/"><img src="steam.png" alt="" class="steam"></a>
+        </div>
 
+
+</main>
+</div>
 <footer> 
     <p>2020 © Redbeet Interactive</p>
     <ul>
@@ -52,5 +62,18 @@
     <il><a href="https://www.facebook.com/RedbeetOfficial/"><img src="facebook.png" alt="facebook"></a></il>
     <il><a href="https://www.youtube.com/channel/UCnVNBWWIcpwsrytqdruLTWA"><img src="youtube.png" alt="youtube"></a></il>
     <il><a href="https://www.twitch.tv/redbeetinteractive"><img src="twitch.png" alt="twitch"></a></il>
-</ul></footer>
+</ul>
+</footer>
+
+
 </html>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "15vw";
+        document.getElementById("main").style.marginLeft = "15vw";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
