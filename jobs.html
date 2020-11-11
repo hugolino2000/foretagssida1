@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Redbeet Interactive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+<video muted loop autoplay poster="poster.png" class="videobackground">
+    <source src="headervideo.mp4" type="video/mp4"> </video>
+<span onclick="openNav()" class="openNav"><i class="fas fa-angle-right"></i></span>
+
+<div id="main">
+    <header class="header2">
+
+        <h1><a href="index.html"><img src="logo.png" alt="logo"></a></h1>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-left"></i></a>
+        <a href="aboutus.html" class="aboutus">About us</a>
+        <a href="jobs.html" class="Jobs">Jobs</a>
+        <a href="contacts.html" class="Contacts">Contacts</a>
+        <a href="https://raft-game.com/" class="Raft">Raft</a>
+    </div>
+
+
+
+
+    <main>
+                <h1>Want to work with us?</h1>
+        <div  class="grid-job">
+
+        <div class="job">
+      
+       <h2>What is it like working at Redbeet?</h2>
+       <p><b>In May 2018 we released our debut title Raft on Steam Early Access, and are now embarking upon an adventure to find new
+    talents who wish to join our team. We work closely together in an open and friendly office environment where we openly
+    share ideas and feedback.</b>
+</p>
+<br>
+<p>Apart from a salary, you will also receive occupational pension and a great set of insurances. As we want our coworkers
+happy and healthy we offer a wellness grant to help pay for activities such as gyms, sports etc. A while back we also
+transitioned into a 7-hour work day to promote a good work/life balance, and we strive to keep overtime to a minimum,
+which has worked out very well so far.
+</p>
+<br>
+<p>The office currently offers table tennis, a Switch and some VR equipment for past time and break activities, but we are
+open to expand this section if you have any ideas?</p>
+<br>
+<p>While Skövde might be a smaller town, it offers a lot of community and activities, especially for game developers. There
+are a lot of game companies here which usually makes it easy to find people if you want to talk games, play board games
+or grab something to drink. Game Developer Pub is a recurring evening of food, drinks and socializing hosted by Sweden
+Game Arena, where the industry and local game students come together at a local restaurant, and during fall industry
+professionals and beginners travel from all around the world to meet up at the Swedish Game Conference right here in
+town.</p>
+<br>
+<p>With the train track going right through the middle of Skövde, you are only one hour from Gothenburg and two hours
+    from
+    Stockholm.</p>
+</div>
+<br>
+<div class="break">
+    <br>
+</div>
+<div class="job2">
+<h2>Open positions</h2>
+<p>If you find an interesting position, do not hesitate to send us your CV and a cover letter to
+jobs@redbeetinteractive.com. If you have a portfolio or up-to-date projects we highly encourage you to attach them as
+well! And even if your field of expertise is not currently listed here, but you think you would fit in well, get in
+touch anyways!</p>
+
+
+
+</div>
+</div>
+    </main>
+</div>
+<footer>
+    <p>2020 © Redbeet Interactive</p>
+    <ul>
+        <il><a href="https://discord.com/invite/raft"><i class="fab fa-discord"></i></a></il>
+        <il><a href="https://twitter.com/redbeetofficial"><i class="fab fa-twitter"></i></a></il>
+        <il><a href="https://www.facebook.com/RedbeetOfficial/"><i class="fab fa-facebook-f"></i></a></il>
+        <il><a href="https://www.youtube.com/channel/UCnVNBWWIcpwsrytqdruLTWA"><i class="fab fa-youtube"></i></a>
+        </il>
+        <il><a href="https://www.twitch.tv/redbeetinteractive"><i class="fab fa-twitch"></i></a></il>
+    </ul>
+</footer>
+
+
+
+</html>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "15vw";
+        document.getElementById("main").style.marginLeft = "15vw";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>

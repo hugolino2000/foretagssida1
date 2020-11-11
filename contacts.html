@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Redbeet Interactive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+<video muted loop autoplay poster="poster.png" class="videobackground">
+    <source src="headervideo.mp4" type="video/mp4"> </video>
+<span onclick="openNav()" class="openNav"><i class="fas fa-angle-right"></i></span>
+
+<div id="main">
+    <header class="header2">
+
+        <h1><a href="index.html"><img src="logo.png" alt="logo"></a></h1>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-left"></i></a>
+        <a href="aboutus.html" class="aboutus">About us</a>
+        <a href="jobs.html" class="Jobs">Jobs</a>
+        <a href="contacts.html" class="Contacts">Contacts</a>
+        <a href="https://raft-game.com/" class="Raft">Raft</a>
+    </div>
+
+
+
+
+    <main>
+        <div class="contact-grid">
+            <div class="contact"><h3>Visit Us!</h3><p>Vasagatan 29 <br> 541 31 Skövde <br> Sweden <br></p><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.423765241599!2d13.834648915939237!3d58.386254381338844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465b0247608d46af%3A0x8396e05954864cb0!2sVasagatan%2029%2C%20541%2031%20Sk%C3%B6vde!5e0!3m2!1ssv!2sse!4v1605014185458!5m2!1ssv!2sse"
+               class="map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0" ></iframe></div>
+                <div class="contact"><h3>Contact Us!</h3><a href="mailto:contact@redbeetinteractive.com">contact@redbeetinteractive.com</a></div>
+                <div class="contact"><h3>Follow Us!</h3><h4>Redbeet Interactive</h4><a href="https://www.twitch.tv/redbeetinteractive"><i class="fab fa-twitch"></i></a>    <a href="https://www.youtube.com/channel/UCnVNBWWIcpwsrytqdruLTWA"><i class="fab fa-youtube"></i></a><a href="https://www.facebook.com/RedbeetOfficial/"><i class="fab fa-facebook-f"></i></a><a href="https://discord.com/invite/raft"><i class="fab fa-discord"></i></a><a href="https://twitter.com/redbeetofficial"><i class="fab fa-twitter"></i></a> <br> <h4></h4></div>
+
+
+        </div>
+  
+    </main>
+</div>
+    <footer>
+        <p>2020 © Redbeet Interactive</p>
+        <ul>
+            <il><a href="https://discord.com/invite/raft"><i class="fab fa-discord"></i></a></il>
+            <il><a href="https://twitter.com/redbeetofficial"><i class="fab fa-twitter"></i></a></il>
+            <il><a href="https://www.facebook.com/RedbeetOfficial/"><i class="fab fa-facebook-f"></i></a></il>
+            <il><a href="https://www.youtube.com/channel/UCnVNBWWIcpwsrytqdruLTWA"><i class="fab fa-youtube"></i></a>
+            </il>
+            <il><a href="https://www.twitch.tv/redbeetinteractive"><i class="fab fa-twitch"></i></a></il>
+        </ul>
+    </footer>
+
+
+</html>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "15vw";
+        document.getElementById("main").style.marginLeft = "15vw";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
