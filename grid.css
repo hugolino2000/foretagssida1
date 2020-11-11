@@ -1,15 +1,18 @@
 body{
     margin: 0;
 }
-
-html, body{
-    height: 100%;
+html{
+     scroll-behavior: smooth;
+   
 }
+
 main{
     font-family: 'Work Sans', sans-serif;
     font-size: 120%;
     line-height: 1.5;
+
 }
+
 footer p{
     font-family: 'Work Sans', sans-serif;
     color: white;
@@ -53,6 +56,7 @@ a:visited{
 #main{
     margin:0;
     padding:0;
+
 }
 .header img{
     display: flex;
@@ -121,18 +125,20 @@ a:visited{
     left: 0;
     
 }
+
 main{
     background: #263454;
     color:white;
     position: relative;
     padding: 1rem;
     border-top: solid #d63a4a 6px;
+
     
 }
 .openNav{
     padding-top: 2vw;
     padding-left: 2vw;
-    font-size: 3vw;
+    font-size: 3rem;
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -141,6 +147,8 @@ main{
 }
 .openNav i:hover{
     color: black;
+    font-size: 3.5rem;
+    transition: 250ms   ;
 }
 
 
@@ -151,6 +159,7 @@ main{
 main h2{
     display: flex;
     justify-content: center;
+ 
 }
 main h1{
     display: flex;
@@ -237,8 +246,13 @@ footer i{
     font-size: 2rem;
     padding-right: 2rem;
     margin-left: -0.5rem;
-    color: rgb(20, 20, 20);
+    color:black ;
    
+}
+footer i:hover{
+    color: #263454 ;
+    font-size: 1.9rem;
+    transition: 250ms;
 }
 .sidenav{
     height: 100%;
@@ -303,18 +317,18 @@ footer i{
     
 }
 .apply a{
-    border-bottom: transparent solid 2px;
-    border-left: transparent solid 2px;
+    border-bottom: transparent solid 0.1rem;
+    border-left: transparent solid 0.1rem;
+    border-radius: 1rem;
     display: inline;
     padding: 1rem;
     color: white;
 }
 .apply a:hover{
     transition-duration: 500ms;
-    border-bottom: black solid 2px;
-    border-left: black solid 2px;
-    font-size: 105%;
-    
+    border-bottom: black solid 0.3rem;
+    border-left: black solid 0.3rem;
+    font-size: 105%; 
 }
 .job{
     display: grid;
@@ -361,15 +375,15 @@ footer i{
 }
 .contact-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10vw,28vw)) ;
-    grid-template-rows: repeat(auto-fill, minmax(20vh,65vh));
+    grid-template-columns: repeat(3, minmax(10vw,28vw)) ;
+    grid-template-rows: repeat(1, minmax(20vh,65vh));
     padding-left: 10vw;
     justify-self: center;
 }
 @media only screen and (max-width: 769px){
     .contact-grid{
-    grid-template-rows: repeat(auto-fill, minmax(18vh,60vh)); 
-    grid-template-columns: repeat(auto-fill, minmax(10vw,35vw)) ;
+    grid-template-rows: repeat(2, minmax(18vh,65vh)); 
+    grid-template-columns: repeat(2, minmax(10vw,35vw)) ;
     }
 }
 .contact p{
@@ -391,7 +405,18 @@ footer i{
     }
 
 }
-
+.contact .help-center{
+    border: solid #1f2b46 0.19rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    background-color:#30436e ;
+    padding: 0.7rem;
+}
+.contact .help-center:hover{
+   background-color: #1f2b46;
+   transition: 500ms;
+   font-size: 1.4rem;
+}
 .contact{
     position: relative;
     object-fit: cover;
@@ -401,12 +426,18 @@ footer i{
 .contact a{
     text-decoration: none;
     color: #d63a4a;
+    transition: 200ms;
 }
 .contact a:hover{
     text-decoration: none;
-    color: #b12d3a;
+    color: #663c40;
 }
 .contact i{
 padding-right: 1vw;
 font-size: 1.5rem ;
+
+}
+.contact i:hover{
+    font-size:1.4rem ;
+    transition: 150ms;
 }
