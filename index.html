@@ -13,16 +13,18 @@
 </head>
 <video muted loop autoplay poster="poster.png" class="videobackground">
     <source src="headervideo.mp4" type="video/mp4"> </video>
-    <a href="javascript:void(0)" onclick="openNav()" class="openNav"><i class="fas fa-angle-right"></i></a>
+    <a href="javascript:void(0)" onclick="openNav()" class="openNav"><i class="fas fa-bars"></i></a> 
 
 <div id="main">
 <header class="header">
 
-    <h1><a href="index.html"><img src="logo.png" alt="logo"></a></h1>
+    <h1><a href="index.html"><img src="logo.png" alt="logo"></a></h1> <br> <br><br> <br><br> <br><br> <br> <a id="arrow" href="#start"><i  class="fas fa-chevron-down"></i></a>
 </header>
 
+
+
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-left"></i></a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-minus"></i> </a>
     <a href="aboutus.html" class="aboutus">About us</a>
     <a href="jobs.html" class="Jobs">Jobs</a>
     <a href="contacts.html" class="Contacts">Contacts</a>
@@ -33,6 +35,7 @@
 
 
 <main>
+    <div id="start">
     <h2>Welcome!</h2>
     <p>Redbeet Interactive is a small game studio founded in 2017. We are currently developing Raft, a game where your mission
     is to <span>survive an epic oceanic adventure. The game is available on Steam Early Access.</span></p>
@@ -51,7 +54,7 @@
             <a href="https://store.steampowered.com/app/648800/Raft/"><img src="steam.png" alt="" class="steam"></a>
         </div>
 
-
+</div>
 </main>
 
 </div>
@@ -79,4 +82,13 @@
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
     }
+    window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("arrow").style.fontSize = "2rem";
+            } else {
+                document.getElementById("arrow").style.fontSize = "4rem";
+            }
+        }
 </script>
