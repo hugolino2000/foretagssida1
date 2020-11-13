@@ -231,7 +231,9 @@ main  p {
         min-width: 100%;
     }
     .openNav i{
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-left: 2vw;
+    padding-top: 2vw;
         
     }
 
