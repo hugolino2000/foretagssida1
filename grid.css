@@ -157,7 +157,7 @@ main{
 .openNav{
     padding-top: 2vw;
     padding-left: 2vw;
-    font-size: 2rem;
+    font-size:  2rem;
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -230,13 +230,13 @@ main  p {
         min-height: 100%;
         min-width: 100%;
     }
-    .openNav {
-    font-size: 18vw;
+    .openNav i{
+    font-size: 3rem;
         
     }
 
-    .sidenav a{
-        font-size: 10vw;
+    .sidenav i{
+        font-size: 1rem;
     }
 
 }
@@ -291,7 +291,7 @@ footer i:hover{
     font-size: 2vw;
     color:#f04a50;
     display: block;
-    transition: 0.3s;
+    text-align: center;
 }
 .sidenav a:hover{
     color:#a14e4e;
@@ -299,9 +299,8 @@ footer i:hover{
 .sidenav .closebtn{
     position: absolute;
     top:0;
-    right: 5vw;
     font-size: 2rem;
-    margin-left: 5vw;
+    
 }
 #main{
     transition: margin-left .5s;
