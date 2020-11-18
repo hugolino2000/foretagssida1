@@ -3,7 +3,7 @@ body{
 }
 html{
      scroll-behavior: smooth;
-   
+     
 }
 
 main{
@@ -102,54 +102,6 @@ a:visited{
     transform-origin: left top;
     top: 85vh;
 }
-.navigation{
-    justify-content: flex-end;
-    position: relative ;
-    text-align: center;
-    display: flex  ;
-    
-    
-}
-.buttoncontainer img{
-
-
-    width: 25vw;
-
-}
-.buttoncontainer{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-    
-}
-.navhover:hover .navigation{
-     background: round rgba(27, 65, 114, 1);
-}
-
-.navhover:hover .navigation a{
-    padding-left: 1vw;
-    padding-right: 2vw;
-    color: #f04a50;
-    font-size: large;
-   
-   
-}
-.navigation a{
-    padding-left: 1vw;
-    padding-right: 2vw;
-    color: #f04a4f00;
-    font-size: large;
-    
-   
-}
-
-.navigation a:hover{
-    padding-left: 1vw;
-    padding-right: 2vw;
-    color: #a14e4e;
-   
-}
 
 .videobackground{
     object-fit: cover;
@@ -187,11 +139,6 @@ main{
     transition: 250ms   ;
 }
 
-
-.mainimg{
-    position: relative;
-    height: 100%;
-}
 main h2{
     display: flex;
     justify-content: center;
@@ -257,11 +204,15 @@ main  p {
     .sidenav i{
         font-size: 1rem;
     }
+   
 
 }
 
-
-
+@media only screen and (max-width: 769px) {
+ .steam{
+        width: 1rem;
+    }
+}
 .steam-flex{
     position: static ;
     display: flex;
@@ -356,8 +307,10 @@ footer i:hover{
     
 }
 .apply a{
-    border-bottom: transparent solid 0.1rem;
-    border-left: transparent solid 0.1rem;
+    border-bottom: transparent  #d63a4a 0.25rem;
+    border-left: transparent  #d63a4a 0.25rem;
+    border-right:#263454 transparent 0.2rem ;
+    border-top:#263454 transparent 0.2rem;
     border-radius: 1rem;
     display: inline;
     padding: 1rem;
@@ -369,8 +322,7 @@ footer i:hover{
     border-bottom: #d63a4a solid 0.25rem;
     border-left: #d63a4a solid 0.25rem;
     border-right:#263454 solid 0.2rem ;
-    border-top:#263454 solid 0.2rem;
-    font-size: 105%; 
+    border-top:#263454 solid 0.2rem; 
 }
 .job{
     display: grid;
